@@ -15,10 +15,11 @@ int main(){
     reverse.push_back(word);
     
 
-       cout <<word<<",";
+    cout <<word<<",";
 }
     cout<<endl << "after:"<<endl;
     for(int i = reverse.size()-1;  i >= 0; i--){
-        cout<<reverse[i]<<" ";
+    cout<<reverse[i]<<" ";
     }
+
 }
