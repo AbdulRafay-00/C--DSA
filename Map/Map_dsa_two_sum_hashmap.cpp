@@ -8,7 +8,6 @@ int main(){
     unordered_map <int, int> pai ={};
     for(int i = 0 ; i < vec.size(); i++ ){
         int var =  target - vec[i];
-        cout << var<< endl;
         if(pai.find(var) != pai.end()){
             // cout << "is present" << endl;
             cout << "Pair found: " << vec[i] << " + " << var
@@ -16,7 +15,11 @@ int main(){
             cout << "Indices: " << pai[var] << " , " << i << endl;
             
         } 
+        cout << vec[i]<<endl;
         pai[vec[i]]= i;
+    }
+    for ( auto i : pai){
+        cout<<  i.first <<"," << i.second<<endl;
     }
 }
  /*sudo output
@@ -25,4 +28,4 @@ int main(){
  sectond var = 6 ;
  add 6 in map;
  third var = 3;
- found three in map
+ found three in map*/
